@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html class= "login">
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="login">
+        <h1>Enter Your TC ID to Login</h1>
+        <form method="POST" action="/login">
+            <input type="text" id="user_id" name="user_id" required><bf>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

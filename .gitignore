@@ -1,0 +1,6 @@
+bank.db
+static/images/*
+__pycache__/
+*.pyc
+.DS_Store
+myenv/

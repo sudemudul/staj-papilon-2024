@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html class="deposit">
+<head>
+    <meta charset="utf-8" />
+    <title>Deposit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Enter the amount of money you want to deposit: </h1>
+    <h2>You need to show the money to the camera, after the verification process the transaction will be completed. </h2>
+    <form method = "POST" action = "/deposit">
+        <input type = "number" name = "deposit" placeholder="Money Amount" required/><br>
+        <input type="submit" value="Submit" /><br>
+    </form>
+</body>
+</html>

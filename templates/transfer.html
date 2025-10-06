@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html class="transfer" >
+<head>
+    <meta charset="utf-8" />
+    <title>Transfer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Money Transfer Page</h1>
+    <form method = "POST" action = "/transfer">
+        Enter the id of person which you want to transfer money to:<br>
+        <input type = "text" name = "transfer_id" placeholder="Id" required/><br>
+        Enter the amount of money you want to transfer:<br>
+        <input type = "text" name = "transfer" placeholder="Money Amount" required/><br>
+        <input type="submit" value="Submit" /><br>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class = "transactions">
+<head>
+    <meta charset="utf-8" />
+    <title>Transactions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: radial-gradient(circle, #356f5d, #0c5948);
+                color: #fff;
+                text-align: center;
+            }
+            .transactions {
+                margin: 0 auto;
+                width: 70%;
+                margin-top: 50px;
+            }
+            h1 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+            th, td {
+                padding: 12px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #09795e;
+                color: white;
+                font-weight: bold;
+            }
+            tr:hover {
+                background-color: #244d44;
+            }
+            td {
+                font-size: 16px;
+                color: white;
+            }
+        </style>
+    </head>
+<body>
+    <div class="last_transactions">
+        <h1>Last Transactions</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transaction Name</th>
+                        <th>Time</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for transaction in transactions %}
+                    <tr>
+                        <td>{{ transaction[2] }}</td>
+                        <td>{{ transaction[1] }}</td>
+                        <td>{{ transaction[0] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    </div>
+</body>
+</html>

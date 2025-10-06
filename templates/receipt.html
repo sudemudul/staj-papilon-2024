@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="receipt" >
+<head>
+    <meta charset="utf-8" />
+    <title>Receipt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class = 'receipt_info'>
+    <h1>EFT Receipt</h1>
+        <p><b>ID:</b> {{ transferred_to_id }}</p>
+        <p><b>Name: </b>{{ recipient_name }}</p>
+        <p><b>Transfer Amount: </b>{{ transfer_amount }} TL </p>
+        <p><b>Transaction Amount: </b>{{ transaction_amount }} TL</p>
+        <b>Do you confirm the transaction?</b><br>
+    <form class = "receipt_buttons" action="/receipt" method="post">
+        <button type="submit" name="response" value="yes" class="btn">Yes</button>
+        <button type="submit" name="response" value="no" class="btn">No</button>
+    </form>
+</body>
+</html>
+

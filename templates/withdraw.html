@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="withdraw">
+<head>
+    <meta charset="utf-8" />
+    <title>Withdraw</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Enter the amount of money you want to withdraw: </h1>
+    <form method = "POST" action = "/withdraw">
+        <input type = "number" step="0.01" name = "withdraw" placeholder="Money Amount" required/><br>
+        <input type="submit" value="Submit" /><br>
+    </form>
+</body>
+</html>

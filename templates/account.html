@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="account">
+<head>
+    <meta charset="utf-8" />
+    <title>Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Bank Account!</h1>
+        <h2>{{name}}</h2>
+        {% if image_path %}
+            <img src="{{ url_for('static', filename=image_path) }}" alt="User Image" style="max-width: 200px; max-height: 200px;" />
+        {% else %}
+            <p>No image available</p>
+        {% endif %}
+        
+        
+        <h3>Current Balance: {{money}} TL</h3>
+        {% if msg %}
+        <p>{{ msg }}</p>
+        {% endif %}
+        <p>Choose one of the options:</p>
+        <a href="/deposit_money" class="button">Deposit Money</a><br>
+        <a href="/withdraw_money" class="button">Withdraw Money</a><br>
+        <a href="/transfer_money" class="button">Transfer Money(EFT)</a><br>
+        <a href="/last_transactions/" class="button">Last Transactions</a><br>
+        <a href="/logout" class="button">Logout</a>
+    </div>
+    
+</body>
+</html>

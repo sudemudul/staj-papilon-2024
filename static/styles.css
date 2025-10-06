@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: radial-gradient(circle, #356f5d, #0c5948);
+    color: #fff;
+}
+.select{
+    text-align: center;
+    padding: 32px;
+}
+.receipt_buttons {
+    display: flex;
+    justify-content: center;
+
+}
+.btn{
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+}
+.button{
+    margin: 10px;
+    display: inline-block; 
+    padding: 10px 20px;
+    width: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+    text-align: center;
+    color:black;
+    text-decoration: none;
+}
+button{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 20%;
+    display: block;
+    font-weight: bold;
+    box-sizing: border-box; 
+    margin: 15px auto;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.login{
+    text-align: center;
+    padding: 32px;
+}
+.signup{
+    text-align: center;
+    padding: 32px;
+}
+.confirmation {
+    text-align: center;
+    padding: 32px;
+}
+.delete_user{
+    text-align: center;
+    padding: 32px;
+}
+label {
+    display: block;
+    margin-bottom: 10px; 
+    font-size: 16px;
+}
+.login input[type="text"]{
+    width: 60%;
+    max-width: 250px;
+}
+.delete_user input[type="text"],input[type="submit"]{
+    width: 40%;
+    max-width: 250px;
+}
+.account{
+    text-align: center;
+    padding: 10px;
+}
+.not_verified, .invalid_tc {
+    text-align: center;
+    padding: 32px;
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.deposit{
+    text-align: center;
+    padding: 32px;
+}
+.transfer,.receipt,.transactions{
+    text-align: center;
+    padding: 32px;
+}
+.withdraw,.transactions{
+    text-align: center;
+    padding: 32px;
+}
+.signup input[type="text"], 
+.signup input[type="file"],  
+.signup input[type="submit"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; 
+    width: 100%;
+}
+input[type="text"], 
+input[type="file"],  
+input[type="submit"],
+input[type="number"],
+input[type="radio"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; 
+    width: 40%;
+    max-width: 250px;
+}
+.form-container,.receipt_info{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd
+}
+.container{
+    max-width: 2000px;
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+}

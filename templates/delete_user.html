@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html class= "delete_user">
+<head>
+    <meta charset="utf-8" />
+    <title>See you!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Sorry to lose you!</h1>
+    <p>Please enter your id to delete your account.</p>
+    <form method="POST" action="/delete_user">
+        TC ID<br>
+        <input type="text" name="user_id" /><br>
+        <input type="submit" value="Submit" /><br>
+    </form>
+</body>
+</html>
